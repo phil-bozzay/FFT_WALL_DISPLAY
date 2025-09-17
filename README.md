@@ -10,23 +10,34 @@ STARTING
 
 ## Project Overview
 
+
+This is an extremely low cost DSP project for displaying the audio frequency spectrum on a grid of LEDs.
+
+<img width="550" height="308" alt="image" src="https://github.com/user-attachments/assets/9b9a9174-8d4a-44c7-a234-b787b9473ce4" />
+Inspiration: https://www.hackster.io/maxblack/diy-led-audio-spectrum-analyzer-fe8ba7
+
+Goal: 
 Pick up sound in a room and display the frequencies on a grid of leds.
 Front end analog equipment for signal filtering/amplification 
-Rasberry pi for signal processing
-Shift registers/ LED chips for driving LEDs 
+Raspberry pi 2 for signal processing
+
 
 ## Educational Value Added
-Electronic circuit design and digital signal processing 
+Digital signal processing on the pi (fft algorithm optimization, processing acceleration) 
+  - Since I will be using a raspberry pi 2 for signal processing, this will probably need to be implemented in C
+Digital filtering
+  - Expecting an abundance of background noise, so will need to digitally account for this
+I2S communication protocal
 
 ## Tasks
 
 
 ## Design Decisions
-Addressable LEDs: https://www.digikey.com/en/products/detail/sparkfun-electronics/16346/11630211
+Addressable LEDs: BTF-LIGHTING WS2812B
 Microphone: INMP441 -> connect directly to the pi 
-Signal amplifier: LM381n -> might not be needed 
-
-<!-- Your Text Here. You may work with your mentor on this later when they are assigned -->
+Signal amplifier: LM381n -> Amplify analog audio signal before reaching the pi
+Microcontroler: Raspberry pi 2 or 3 for signal processing, which I already have
+<img width="1470" height="714" alt="image" src="https://github.com/user-attachments/assets/687a24eb-37db-4cf8-b11f-1c14cdd2a73b" />
 
 ## Design Misc
 
@@ -51,4 +62,5 @@ Signal amplifier: LM381n -> might not be needed
 ## Log
 
 <!-- Your Text Here. You may work with your mentor on this later when they are assigned -->
+
 
