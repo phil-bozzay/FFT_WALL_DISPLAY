@@ -27,7 +27,8 @@ Digital signal processing on the pi (fft algorithm optimization, processing acce
   - Since I will be using a raspberry pi 2 for signal processing, this will probably need to be implemented in C
 Digital filtering
   - Expecting an abundance of background noise, so will need to digitally account for this
-I2S communication protocal
+
+Using I2S communication protocal
 
 ## Tasks
 
@@ -62,5 +63,6 @@ Microcontroler: Raspberry pi 2 or 3 for signal processing, which I already have
 ## Log
 
 <!-- Your Text Here. You may work with your mentor on this later when they are assigned -->
+
 
 
