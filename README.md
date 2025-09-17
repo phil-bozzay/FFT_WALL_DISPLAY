@@ -22,6 +22,9 @@ Electronic circuit design and digital signal processing
 
 
 ## Design Decisions
+Addressable LEDs: https://www.digikey.com/en/products/detail/sparkfun-electronics/16346/11630211
+Microphone: INMP441 -> connect directly to the pi 
+Signal amplifier: LM381n -> might not be needed 
 
 <!-- Your Text Here. You may work with your mentor on this later when they are assigned -->
 
@@ -48,3 +51,4 @@ Electronic circuit design and digital signal processing
 ## Log
 
 <!-- Your Text Here. You may work with your mentor on this later when they are assigned -->
+
