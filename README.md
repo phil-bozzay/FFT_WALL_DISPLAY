@@ -31,7 +31,9 @@ Digital filtering
 Using I2S communication protocal
 
 ## Tasks
-
+- need barrel jack connector
+- need to get rasberry pi imaged
+- need to get proper power supply 
 
 ## Design Decisions
 Addressable LEDs: BTF-LIGHTING WS2812B
@@ -63,6 +65,7 @@ Microcontroler: Raspberry pi 2 or 3 for signal processing, which I already have
 ## Log
 
 <!-- Your Text Here. You may work with your mentor on this later when they are assigned -->
+
 
 
 
