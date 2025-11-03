@@ -1,0 +1,25 @@
+[Unit]
+Description=LED FFT Spectrum Display (runs with sudo)
+After=network.target sound.target
+
+[Service]
+# Run as root (so no need to sudo manually)
+User=root
+WorkingDirectory=/home/goggins/code
+
+# Delay ensures ALSA + I2S mic are initialized before start
+ExecStartPre=/bin/sleep 5
+
+# Activate your virtual environment and run script
+ExecStart=/bin/bash -c 'source /home/goggins/code/led-env/bin/activate && python /home/goggins/code/fft_display.py'
+
+# Restart on crash
+Restart=always
+
+# Make output visible in journalctl
+StandardOutput=inherit
+StandardError=inherit
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
